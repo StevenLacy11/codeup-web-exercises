@@ -24,15 +24,12 @@
 // and Hercules (1 day, you don't know yet if they're going to like it).
 // If price for a movie per day is $3, how much will you have to pay?
 
-    var littleM = 3;
-    var brotherB = 5;
-    var herc = 1;
+    var littleM = parseInt(prompt("How many days have you had the Little Mermaid?"));
+    var brotherB = parseInt(prompt("How many days have you had Brother Bear?"));
+    var herc = parseInt(prompt("How many days have you had Hercules?"));
     var total;
 
-        littleM = littleM * 3;
-        brotherB = brotherB * 3;
-        herc = herc * 3;
-        total = littleM + brotherB + herc;
+        total = littleM *3 + brotherB *3 + herc *3;
 
             alert("The total amount that is owed for the three movies is \n$" + total +".");
 
@@ -44,15 +41,12 @@
 // How much will you receive in payment for this week?
 // You worked 10 hours for Facebook, 6 hours for Google and 4 hours for Amazon.
 
-    var google = 400;
-    var amazon = 380;
-    var facebook = 350;
+    var google = parseInt(prompt("how many hours did you work at google?"));
+    var amazon = parseInt(prompt("how many hours did you work at amazon?"));
+    var facebook = parseInt(prompt("how many hours did you work at facebook?"));
     var total;
 
-        google = google * 10;
-        amazon = amazon * 6;
-        facebook = facebook * 4;
-        total = google + amazon + facebook;
+        total = google * 400 + amazon + 380 + facebook * 350;
 
             alert("The amount you earned this week was $" + total + " \nNice work!");
 
@@ -61,23 +55,23 @@
 //A student can be enrolled in a class only if the class is
 // not full and the class schedule does not conflict with her current schedule.
 
-    var full = false;
-    var conflict = false;
-    var schedule;
+     var classIsFull = confirm("Is the class you are trying to join full?");
+     var hasScheduleConflicts = confirm("Do you have a class at 2:30 already?");
 
+        alert("You can join the class is a " + (!classIsFull && !hasScheduleConflicts) + " statement.");
 
-       Boolean(schedule = full + conflict);
-       alert(schedule);
 
 
 //A product offer can be applied only if a person buys more than 2 items,
 // and the offer has not expired.Premium members do not need to buy a specific
 // amount of products.
 
-    var x = x >= 2;
-    var y;
+    var isOfferValid = confirm("Is the offer still valid?");
+    var hasMoreThanTwoItems = parseInt(prompt("How many items do you have in your cart?")) >= 2;
+    var isPremiumMember = confirm("Are you a premium member?");
+    var canUserUseOffer = (hasMoreThanTwoItems || isPremiumMember) && isOfferValid;
 
-
+        alert("You can use this offer is a " + canUserUseOffer + " statement.");
 
 
 

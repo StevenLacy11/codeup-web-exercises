@@ -74,14 +74,14 @@ console.log(isTwo(random));
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-//var x = prompt("What percent do you want as a tip?");
-//var y = parseInt(prompt("What is the total of the bill?"));
+var x = prompt("What percent do you want as a tip?");
+var y = parseInt(prompt("What is the total of the bill?"));
 
-//function calculateTip(x, y) {
-  //  var total = x * y;
-  //  return total;
-//}
-//console.log(calculateTip (x, y));
+function calculateTip(x, y) {
+    var total = x * y;
+    return total;
+}
+console.log(calculateTip (x, y));
 
 /**
  * TODO:

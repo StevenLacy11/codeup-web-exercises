@@ -27,9 +27,9 @@
     var littleM = parseInt(prompt("How many days have you had the Little Mermaid?"));
     var brotherB = parseInt(prompt("How many days have you had Brother Bear?"));
     var herc = parseInt(prompt("How many days have you had Hercules?"));
-    var total;
+    var total= littleM *3 + brotherB *3 + herc *3;
 
-        total = littleM *3 + brotherB *3 + herc *3;
+        //total =
 
             alert("The total amount that is owed for the three movies is \n$" + total +".");
 
@@ -67,7 +67,7 @@
 // amount of products.
 
     var isOfferValid = confirm("Is the offer still valid?");
-    var hasMoreThanTwoItems = parseInt(prompt("How many items do you have in your cart?")) >= 2;
+    var hasMoreThanTwoItems = parseInt(prompt("How many items do you have in your cart?")) > 2;
     var isPremiumMember = confirm("Are you a premium member?");
     var canUserUseOffer = (hasMoreThanTwoItems || isPremiumMember) && isOfferValid;
 

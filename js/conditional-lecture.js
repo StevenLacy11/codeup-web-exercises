@@ -10,3 +10,29 @@ else if (isSunny && isRaining){
 else {
     alert("Good - too much sun can cause some issues as you get older");
 }
+
+        //if/else ternary(short hand syntax)
+//(condition) ? if action here : else action here
+(condition) ? console.log("This is a ternary") : console.log("this is a ternary");
+
+        //Switch statements!!!!!!!
+
+var pizzaPreference = prompt("What kind of pizza do you like?");
+
+//switch = if
+switch(pizzaPreference) {
+   //case = decisions
+    case "pineapple and hot sauce":
+        alert("What a coincidence, that's my favorite!");
+        break; // stops reading the code
+   //case = decision
+    case "cheese":
+        alert("Just plain cheese? Okay...");
+        break; // stops reading the code
+   // default = else
+    default:
+        alert(pizzaPreference + " isn't my favorite, but let's order some!");
+        break; // stops reading code
+}
+
+

@@ -43,9 +43,9 @@
     var google = parseInt(prompt("how many hours did you work at google?"));
     var amazon = parseInt(prompt("how many hours did you work at amazon?"));
     var facebook = parseInt(prompt("how many hours did you work at facebook?"));
-    var total;
+    var total = google * 400 + amazon + 380 + facebook * 350;
 
-        total = google * 400 + amazon + 380 + facebook * 350;
+
 
             alert("The amount you earned this week was $" + total + " \nNice work!");
 

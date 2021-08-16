@@ -29,7 +29,6 @@
     var herc = parseInt(prompt("How many days have you had Hercules?"));
     var total= littleM *3 + brotherB *3 + herc *3;
 
-        //total =
 
             alert("The total amount that is owed for the three movies is \n$" + total +".");
 

@@ -124,41 +124,44 @@ switch(colors) {
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-var originalPrice = (prompt("What is the total price?"));
-var luckyNum = (prompt("What is your lucky number"));
-var discountTotal = originalPrice * discountPercent;
-var total = originalPrice - discountTotal
 
-function applyDiscount(originalPrice, discountPercent, discountTotal) {
+var luckyNum = prompt("Pick a number between 1 and 5")
+var total = prompt("what was the total?")
 
-    return total
-}
-console.log(applyDiscount(total));
-
-function calculateTotal(luckyNum, total){
+function calculateTotal(luckyNum, total) {
     switch (luckyNum) {
         case "0":
             alert("You dont get a discount!")
+            return total;
             break;
         case "1":
             alert("You get 10% off.")
+            return total * 0.9
             break;
         case "2":
             alert("You get 25% off.")
+            return total * .25
             break;
         case "3":
             alert("You get 35% off.")
+            return total * .35
             break;
         case "4":
             alert("You get 50% off.")
+            return total * .50
             break;
         case "5":
             alert("You get everything for FREE!")
+            return total - total
             break;
-        default:
+           default:
             alert("Try again!")
             break;
+
     }
+}
+alert("Your total today is $" + calculateTotal(luckyNum, total));
+
 
 /**
  * TODO:
@@ -168,7 +171,7 @@ function calculateTotal(luckyNum, total){
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+ var luckyNumber = Math.floor(Math.random() * 6);
 
 /**
  * TODO:

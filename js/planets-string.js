@@ -28,4 +28,14 @@
     console.log(newPlanetString);
 
 
+    //Found on StackOverFlow just changed a few things to work for me.
+
+    // var newPlanetArray =
+    //     '<ul>' +
+    //     planetsArray.map(function (planetArray) {
+    //         return '<li>' + newPlanetArray + '</li>';
+    //     }).join('') +
+    //     '</ul>';
+    //
+    //  console.log(newPlanetArray)
 })();

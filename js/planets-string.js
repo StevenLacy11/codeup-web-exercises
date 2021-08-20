@@ -27,5 +27,5 @@
     var newPlanetString = planetsArray.join("<br>")
     console.log(newPlanetString);
 
-    var new
+
 })();

@@ -5,8 +5,8 @@
 //     var result = i * number;
 //     console.log(result);
 // }
-
-//                        //3
+//
+// //                        //3
 // function randomNum(min, max) {
 //     for (var x = 10; x <= 200; x++) {
 //         if (x === 0) {
@@ -31,9 +31,9 @@
 
 
                     //5
- // function countDown(){
- //    for (var i = 100; i >= 5; i = i - 5)
- //    console.log(i)
- //
- // }
+ function countDown(){
+    for (var i = 100; i >= 5; i = i - 5)
+    console.log(i)
+
+ }
 

@@ -15,7 +15,7 @@
      * array.
      */
 
-    // console.log(names)
+    // console.log(names.length);
 
     /**
      * TODO:
@@ -57,13 +57,22 @@
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
-    //
-    names.forEach(function first(){
+    var num = [1,2,3,4,5]
 
-                console.log(names[0])
-                console.log(names[1]);
-                console.log(names[3]);
+    function first(arr) {
+        return arr[0];
+    }
+    console.log(first(num));
 
-            });
+
+    function second(arr) {
+        return arr[1];
+    }
+    console.log(second(num));
+
+        function last(arr){
+            return arr[arr.length - 1];
+    }
+    console.log(last(num));
 
 })();

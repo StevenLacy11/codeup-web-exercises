@@ -11,9 +11,11 @@
 // for(var i = 1; i <= 50; i++) {
 //     if (i % 2 === 0) {
 //         continue;
-//     } else if (i == num) {
+//     }
+//     else if (i == num) {
 //         console.log("Number to skip is: " + num)
-//     } else {
+//     }
+//     else {
 //         console.log("Here is an odd number: " + i)
 //     }
 // }

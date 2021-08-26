@@ -83,30 +83,30 @@
 	 * > console.log(books[0].author.firstName) // "Douglas"
 	 * > console.log(books[0].author.lastName) // "Adams"
 	 */
-	var books = [
-		{title: "Absalom, Absalom!",
-		firstName: "William",
-		lastName: "Faulkner"},
-
-		{title: "A Time To Kill",
-		firstName: "John",
-		lastName: "Grisham"},
-
-		{title: "The House Of Mirth",
-		firstName: "Edith",
-		lastName: "Wharton"},
-
-		{title: "East Of Eden",
-		firstName: "John",
-		lastName: "Steinbeck"},
-
-		{title: "The Sun Also Rises",
-		firstName: "Ernest",
-		lastName: "Hemingway"}
-	];
-	console.log(books[1].title);
-	console.log(books[1].firstName);
-	console.log(books[1].lastName);
+	// var books = [
+	// 	{title: "Absalom, Absalom!",
+	// 	firstName: "William",
+	// 	lastName: "Faulkner"},
+	//
+	// 	{title: "A Time To Kill",
+	// 	firstName: "John",
+	// 	lastName: "Grisham"},
+	//
+	// 	{title: "The House Of Mirth",
+	// 	firstName: "Edith",
+	// 	lastName: "Wharton"},
+	//
+	// 	{title: "East Of Eden",
+	// 	firstName: "John",
+	// 	lastName: "Steinbeck"},
+	//
+	// 	{title: "The Sun Also Rises",
+	// 	firstName: "Ernest",
+	// 	lastName: "Hemingway"}
+	// ];
+	// console.log(books[1].title);
+	// console.log(books[1].firstName);
+	// console.log(books[1].lastName);
 	//     var library = books
 	/**
 	 * TODO:
@@ -136,6 +136,7 @@
 	 // for(var i = 0; i < library.length; i++){
 	 //    console.log("this is a book in the library " + library[i].title)
 		// console.log("this is the authors of that book " + books[i].firstName + " " + books[i].lastName);
+	 //    console.log("---");
 	 // }
 
 	/**

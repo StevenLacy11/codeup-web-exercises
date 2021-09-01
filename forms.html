@@ -6,41 +6,43 @@
 </head>
 <body>
 
-
 <form method="POST" action="https://requestinspector.com/inspect/01feexf7kmvf4efw9k3kdvfcvj">
-
-	<label for="email">Enter your email</label>
-	<input id="email" name="email" type="text">
+	<div>
+		<label for="Send_to">Send to</label>
+		<input type="text" id="Send_to" name="email" value="" placeholder="Recipient">
+	</div>
+	<div>
+		<label for="From">From</label>
+		<input type="text" id="From" name="email" value="" placeholder="Your Name">
+	</div>
+	<div>
+		<label for="Subject">Subject</label>
+		<input type="text" id="Subject" name="Subject" value="" placeholder="Subject">
+	</div>
 	<br>
-
-	<label for="password">Enter your password</label>
-	<input id="password" name="password" type="password">
+	<div>
+		<textarea id="email_body" name="email_body" placeholder="content here" rows="5" cols="40" ></textarea>
+	</div>
 	<br>
-
-	<input type="submit">
-
-	<br>
-	<lable>Bio</lable>
-	<br>
-		<textarea name="Bio"></textarea>
-
-	<br>
-
-	<label>How did you hear about us?</label>
-	<br>
-	<input name="radio advertisement" value="true" type="checkbox">radio advertisement
-	 <br>
-	<input name="billboard" value="true" type="checkbox">billboard
-	<br>
-	<input name="internet advertisement" value="true" type="checkbox">internet advertisement
-	<br>
-	<input name="other" value="true" type="checkbox">other
+	<p>How did you hear about us?</p>
+	<div>
+		<input type="checkbox" id="radio advertisement" name="radio advertisement" value="radio advertisement">
+		<label for="radio advertisement"> Radio Advertisement</label>
+		<br>
+		<input type="checkbox" id="billboard" name="billboard" value="billboard">
+		<label for="billboard">Billboard</label>
+		<br>
+		<input type="checkbox" id="internet advertisement" name="internet advertisement" value="internet advertisement">
+		<label for="internet advertisement">Internet Advertisement</label>
+		<br>
+		<input type="checkbox" id="other" name="other" value="other">
+		<label for="other">Other</label>
+	</div>
 
 	<br>
 
 	<p>What web browser are you using?</p>
-
-	<form action="/action_page.php">
+	<div>
 		<label for="website">Choose a browser:</label>
 		<select id="website" name="website">
 			<option value="Chrome">Chrome</option>
@@ -49,6 +51,7 @@
 			<option value="Safari">Safari</option>
 		</select>
 		<input type="submit">
+	</div>
 </form>
 
 </body>

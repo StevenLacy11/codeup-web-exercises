@@ -1,0 +1,19 @@
+.background{
+	background-color: #26190f;
+}
+.fancy-header{
+	color: purple;
+	text-decoration: underline;
+	text-decoration-color: darkgoldenrod;
+	text-align: center;
+}
+.second-header{
+	color: purple;
+}
+.list{
+	color: darkgoldenrod;
+}
+
+.hr{
+	border: 1px solid darkgoldenrod;
+}

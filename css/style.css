@@ -1,27 +1,40 @@
-.background{
+HTML{
 	background-color: #26190f;
 }
+
 .fancy-header{
 	color: purple;
 	text-decoration: underline;
 	text-decoration-color: darkgoldenrod;
 	text-align: center;
 }
+
 .second-header{
 	color: purple;
 }
+
 .list{
 	color: darkgoldenrod;
 }
 
-.hr{
+hr{
 	border: 1px solid darkgoldenrod;
 }
 
-.img{
+img{
+	position: relative;
 	width: 200px;
 	height: 200px;
+	overflow: hidden;
 	border-style: groove;
 	border-color: darkgoldenrod;
 	border-radius: 50%;
+}
+img:hover {
+	padding: 40px;
+	background-color: purple;
+	transition: transform .2s; /* Animation */
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
 }

@@ -15,6 +15,20 @@ HTML{
 	text-decoration-color: darkgoldenrod;
 	text-align: center;
 	font-family: Brush Letters, sans-serif;
+	animation-duration: 8s;
+	animation-name: slidein;
+	animation-iteration-count: infinite;
+}
+@keyframes slidein {
+	0% {
+		margin-left: 0%;
+	}
+	50% {
+		margin-left: 300px;
+	}
+	100% {
+		margin-left: 0%;
+	}
 }
 
 .second-header{
@@ -39,7 +53,7 @@ img{
 	border-radius: 50%;
 }
 img:hover {
-	padding: 40px;
+	padding: 40em;
 	background-color: darkslateblue;
 	transition: transform .2s; /* Animation */
 	width: 200px;

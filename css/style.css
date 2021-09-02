@@ -53,7 +53,7 @@ img{
 	border-radius: 50%;
 }
 img:hover {
-	padding: 40em;
+	padding: 40px;
 	background-color: darkslateblue;
 	transition: transform .2s; /* Animation */
 	width: 200px;

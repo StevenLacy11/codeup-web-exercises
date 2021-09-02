@@ -17,3 +17,11 @@
 .hr{
 	border: 1px solid darkgoldenrod;
 }
+
+.img{
+	width: 200px;
+	height: 200px;
+	border-style: groove;
+	border-color: darkgoldenrod;
+	border-radius: 50%;
+}

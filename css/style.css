@@ -69,6 +69,9 @@ list, ol{
 	list-style-type: lower-roman;
 }
 
+a:hover{
+	color: chocolate;
+}
 a:visited{
 	color: cornflowerblue;
 }

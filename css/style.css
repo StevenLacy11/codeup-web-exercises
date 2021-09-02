@@ -1,5 +1,5 @@
 HTML{
-	font-family: fantasy,Papyrus;
+	font-family: fantasy, Papyrus,serif;
 	background-color: #26190f;
 	background-image: url(/img/sea-edge-79ab30e2.png);
 	background-size: cover;
@@ -14,7 +14,7 @@ HTML{
 	text-decoration: underline;
 	text-decoration-color: darkgoldenrod;
 	text-align: center;
-	font-family: Brush Letters, serif;
+	font-family: Brush Letters, sans-serif;
 }
 
 .second-header{
@@ -40,7 +40,7 @@ img{
 }
 img:hover {
 	padding: 40px;
-	background-color: purple;
+	background-color: darkslateblue;
 	transition: transform .2s; /* Animation */
 	width: 200px;
 	height: 200px;
@@ -50,10 +50,11 @@ img:hover {
 list, ul{
 	list-style-type: georgian;
 }
+
 list, ol{
 	list-style-type: lower-roman;
 }
 
 a:visited{
-	color: green;
+	color: cornflowerblue;
 }

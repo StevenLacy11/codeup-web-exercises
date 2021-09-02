@@ -1,13 +1,20 @@
 HTML{
+	font-family: fantasy,Papyrus;
 	background-color: #26190f;
+	background-image: url(/img/background.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
+
 
 .fancy-header{
 	color: purple;
 	text-decoration: underline;
 	text-decoration-color: darkgoldenrod;
 	text-align: center;
-	font-family: "Brush Letters";
+	font-family: Brush Letters, serif;
 }
 
 .second-header{
@@ -38,4 +45,15 @@ img:hover {
 	width: 200px;
 	height: 200px;
 	margin: 0 auto;
+}
+
+list, ul{
+	list-style-type: georgian;
+}
+list, ol{
+	list-style-type: lower-roman;
+}
+
+a:visited{
+	color: green;
 }

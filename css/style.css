@@ -1,4 +1,10 @@
 HTML{
+
+}
+
+body{
+	text-align: center;
+	list-style-position: inside;
 	font-family: fantasy, Papyrus,serif;
 	background-color: #26190f;
 	background-image: url(/img/sea-edge-79ab30e2.png);
@@ -6,11 +12,7 @@ HTML{
 	background-position: right;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-}
 
-body{
-	text-align: center;
-	list-style-position: inside;
 }
 
 .fancy-header{

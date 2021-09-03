@@ -1,11 +1,11 @@
-HTML{
+HTML {
 
 }
 
-body{
+body {
 	text-align: center;
 	list-style-position: inside;
-	font-family: fantasy, Papyrus,serif;
+	font-family: fantasy, Papyrus, serif;
 	background-color: #26190f;
 	background-image: url(/img/sea-edge-79ab30e2.png);
 	background-size: cover;
@@ -15,73 +15,102 @@ body{
 
 }
 
-.fancy-header{
+.fancy-header {
 	color: purple;
 	text-decoration: underline;
 	text-decoration-color: darkgoldenrod;
 	text-align: center;
 	font-family: Brush Letters, sans-serif;
-	animation-duration: 8s;
-	animation-name: slidein;
-	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-name: rotation;
+	animation-iteration-count: 1;
 }
-@keyframes slidein {
-	0% {
-		margin-left: 0%;
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
 	}
-	50% {
-		margin-left: 300px;
-	}
-	100% {
-		margin-left: 0%;
+	to {
+		transform: rotate(360deg);
 	}
 }
 
-.second-header{
+
+.second-header {
 	color: purple;
+	font-weight: bold;
 }
 
-.list{
+.list {
 	color: darkgoldenrod;
 }
 
-hr{
+hr {
 	border: 1px solid darkgoldenrod;
 }
 
-img{
+div {
+	display: inline-block;
+}
+
+img {
 	position: relative;
 	width: 200px;
 	height: 200px;
 	overflow: hidden;
-	border-style: groove;
-	border-color: darkgoldenrod;
-	border-radius: 50%;
+
+
 }
+
+.size {
+	box-sizing: content-box;
+	width: 100%;
+	font-size: 0;
+}
+
+.geeks {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.geeks img {
+	width: 100%;
+	transition: 0.5s all ease-in-out;
+}
+
+.geeks:hover img {
+	transform: scale(1.5);
+}
+
 img:hover {
 	padding: 40px;
 	background-color: darkslateblue;
-	transition: transform .2s; /* Animation */
+	transition: transform .15s; /* Animation */
 	width: 200px;
-	height: 200px;
+	height: 210px;
 	margin: 0 auto;
+	opacity: 87%;
 }
-table{
+
+table {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-list, ul{
+list, ul {
 	list-style-type: georgian;
 }
 
-list, ol{
+list, ol {
 	list-style-type: lower-roman;
 }
 
-a:hover{
+a:hover {
 	color: chocolate;
 }
-a:visited{
+
+a:visited {
 	color: cornflowerblue;
 }

@@ -103,23 +103,23 @@ a {
 .profile-details {
 	float: left;
 	width: calc(25% - 16px);
-	margin: 0 .5em 0 .5em;
+	margin: 0 .5em;
 }
 
 .timeline {
 	float: left;
 	width: calc(50% - 16px);
-	margin: 0 .5em 0 .5em;
+	margin: 0 .5em;
 }
 
 .who-to-follow {
 	float: left;
 	width: calc(25% - 16px);
-	margin: 0 .5em 0 .5em;
+	margin: 0 .5em;
 }
 
 .container {
-	padding-top: 2em;
+	margin-top: 2em;
 }
 
 .media {
@@ -127,11 +127,11 @@ a {
 	background-color: var(--light-bg);
 	border-bottom: 1px solid var(--separator-color);
 	padding: .5em;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .media-image {
-	width: 50px;
+	max-width: 50px;
 	margin-top: 1.33em;
 	float: left;
 }

@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		  name="viewport">
+
+	<!-- Bootstrap CSS -->
+	<link crossorigin="anonymous"
+		  href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+		  rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/5c99e42ceb.js" crossorigin="anonymous"></script>
+
+
+	<!-- Your custom CSS goes here -->
+	<link href="css/custom.css"
+		  rel="stylesheet">
+
+	<title>Pizza World</title>
+
+
+</head>
+<body class="mb-5">
+<nav class="navbar navbar-expand-lg navbar-light  border-top px-5"
+	 style="background-color: rgb(248,249,250)">
+	<a class="navbar-brand btn btn-light pl-0"
+	   href="#">Pizza World</a>
+	<button aria-controls="navbarSupportedContent"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
+			class="navbar-toggler"
+			data-target="#navbarSupportedContent"
+			data-toggle="collapse"
+			type="button">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse"
+		 id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link nav-button-hover btn btn-light"
+				   href="#">Order online<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link btn btn-light"
+				   href="#">Menu</a>
+			<li>
+			<form class="form-inline my-2 my-lg-0">
+				<input aria-label="Search"
+					   class="form-control mr-sm-2"
+					   placeholder="Zip code"
+					   type="search">
+				<button class="btn btn-outline-dark my-2 my-sm-0"
+						type="submit">Search stores near you!
+				</button>
+			</form>
+		</li>
+		</ul>
+		<div class="collapse navbar-collapse"
+			 id="navbarNavDropdown">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link btn btn-light"
+					   href="#"><i class="fas fa-user"></i> Sign Up<span
+							class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="mx-5">
+	<div class="container-fluid px-0">
+		<div class="jumbotron jumbotron-fluid d-none d-sm-block">
+			<div class="container-fluid px-0">
+				<h1 class="display-4">Welcome to Pizza World!</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="mx-5">
+	<form action="https://request-inspector.glitch.me/"
+		  method="POST"> <!-- Form stuff -->
+		<h2>Build Your Own Pizza!</h2>
+		<nav>
+			<div class="nav nav-tabs"
+				 id="nav-tab"
+				 role="tablist">
+
+				<a aria-controls="size-and-crust"
+				   aria-selected="true"
+				   class="nav-link active"
+				   data-toggle="tab"
+				   href="#size-and-crust"
+				   id="nav-size-and-crust-tab"
+				   role="tab">
+					<span class="badge badge-secondary badge-pill">1</span> Size and Crust
+				</a>
+				<a aria-controls="cheese-and-sauce"
+				   aria-selected="false"
+				   class="nav-link"
+				   data-toggle="tab"
+				   href="#cheese-and-sauce"
+				   id="nav-cheese-and-sauce"
+				   role="tab">
+					<span class="badge badge-secondary badge-pill">2</span> Cheese and Sauce
+				</a>
+				<a aria-controls="toppings"
+				   aria-selected="false"
+				   class="nav-link"
+				   data-toggle="tab"
+				   href="#toppings"
+				   id="nav-toppings"
+				   role="tab">
+					<span class="badge badge-secondary badge-pill">3</span> Toppings
+				</a>
+
+			</div>
+		</nav>
+
+		<div class="tab-content"
+			 id="nav-tabContent">
+			<div aria-labelledby="nav-size-and-crust-tab"
+				 class="tab-pane fade show active"
+				 id="size-and-crust"
+				 role="tabpanel">
+
+
+				<div class="card">
+					<div class="card-header text-white bg-primary">
+						Choose size and crust
+					</div>
+					<div class="card-body">
+						<p class="card-text">
+						<div class="card mb-5">
+							<div class="card-header">
+								Size
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">
+									<div class="form-check">
+										<input class="form-check-input"
+											   id="size-small"
+											   name="size"
+											   type="radio"
+											   value="size-small"><label
+											class="form-check-label pr-5"
+											for="size-small">Small (10")</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<div class="form-check"><input
+											class="form-check-input"
+											id="size-medium"
+											name="size"
+											type="radio"
+											value="size-medium"><label
+											class="form-check-label pr-5"
+											for="size-medium">
+										Medium (12")
+									</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<div class="form-check">
+										<input class="form-check-input"
+											   id="size-large"
+											   name="size"
+											   type="radio"
+											   value="size-large">
+										<label class="form-check-label pr-5"
+											   for="size-large">
+											Large (14")
+										</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<div class="form-check">
+										<input class="form-check-input"
+											   id="size-extra-large"
+											   name="size"
+											   type="radio"
+											   value="size-extra-large">
+										<label class="form-check-label pr-5"
+											   for="size-extra-large">
+											Extra Large (16")
+										</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="card mb-5">
+							<div class="card-header">
+								Crust
+							</div>
+							<li class="list-group-item">
+								<div class="form-check">
+									<input class="form-check-input"
+										   id="crust-hand-tossed"
+										   name="crust"
+										   type="radio"
+										   value="crust-hand-tossed">
+									<label class="form-check-label pr-5"
+										   for="crust-hand-tossed">
+										Hand Tossed
+									</label>
+								</div>
+
+							</li>
+							<li class="list-group-item">
+								<div class="form-check">
+									<input class="form-check-input"
+										   id="crust-crispy-thin"
+										   name="crust"
+										   type="radio"
+										   value="crust-crispy-thin">
+									<label class="form-check-label pr-5"
+										   for="crust-crispy-thin">
+										Crispy Thin
+									</label>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<div class="form-check">
+									<input class="form-check-input"
+										   id="crust-cheese-stuffed"
+										   name="crust"
+										   type="radio"
+										   value="crust-cheese-stuffed">
+									<label class="form-check-label pr-5"
+										   for="crust-cheese-stuffed">
+										Cheese Stuffed
+									</label>
+								</div>
+							</li>
+						</div>
+					</div>
+					<div class="card-footer text-muted d-flex">
+						<nav class="ml-auto">
+							<div class="nav nav-tabs"
+								 id="next-tab-1"
+								 role="tablist">
+								<a aria-controls="cheese-and-sauce"
+								   aria-selected="false"
+								   class="btn btn-primary nav-link ml-auto"
+								   data-toggle="tab"
+								   href="#cheese-and-sauce"
+								   id="go-cheese-and-sauce"
+								   role="tab">
+									Next Step
+								</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div aria-labelledby="nav-profile-tab"
+				 class="tab-pane fade"
+				 id="cheese-and-sauce"
+				 role="tabpanel">
+				<div class="card">
+					<div class="card-header text-white bg-primary">
+						Cheese and Sauce
+					</div>
+					<div class="card-body">
+						<p class="card-text">
+						<div class="card mb-5">
+							<div class="card-header">
+								Cheese
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">How much?</h5>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">
+										<div class="input-group mb-3">
+											<select class="custom-select"
+													id="cheese"
+													name="cheese">
+												<option selected
+														value="cheese-regular">Regular
+												</option>
+												<option value="cheese-light">Light</option>
+												<option value="cheese-light">Double</option>
+											</select>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card mb-5">
+							<div class="card-header">
+								Sauce
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">What type?</h5>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">
+										<div class="input-group mb-3">
+											<select class="custom-select"
+													id="sauce-type"
+													name="sauce-type">
+												<option selected
+														value="sauce-tomato">Tomato Sauce
+												</option>
+												<option value="sauce-alfredo">Alfredo Sauce</option>
+												<option value="sauce-barbecue">Barbecue Sauce</option>
+											</select>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="input-group mb-3">
+											<select class="custom-select"
+													id="sauce-much"
+													name="sauce-much">
+												<option selected
+														value="sauce-regular">Regular
+												</option>
+												<option value="sauce-extra">Extra</option>
+												<option value="sauce-light">Light</option>
+											</select>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer text-muted d-flex ">
+
+						<nav class="ml-auto">
+							<div class="nav nav-tabs"
+								 id="prev-tab-1"
+								 role="tablist">
+								<a aria-controls="size-and-crust"
+								   aria-selected="false"
+								   class="btn btn-primary nav-link ml-auto"
+								   data-toggle="tab"
+								   href="#size-and-crust"
+								   id="prev-tab-2"
+								   role="tab">
+									Previous Step
+								</a>
+							</div>
+						</nav>
+						<nav>
+							<div class="nav nav-tabs"
+								 id="next-tab-3"
+								 role="tablist">
+								<a aria-controls="toppings"
+								   aria-selected="false"
+								   class="btn btn-primary nav-link ml-auto"
+								   data-toggle="tab"
+								   href="#toppings"
+								   id="next-tab-4"
+								   role="tab">
+									Next Step
+								</a>
+							</div>
+						</nav>
+
+					</div>
+				</div>
+			</div>
+
+<!-- Tab Content ends -->
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script crossorigin="anonymous"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+-->
+
+
+<!-- Your custom JS goes here -->
+
+
+</body>
+</html>
+
+

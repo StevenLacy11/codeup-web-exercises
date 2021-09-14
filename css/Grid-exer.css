@@ -1,0 +1,14 @@
+.header{
+	font-weight: bold
+}
+.secondary-header{
+	color: #4f82fb;
+	font-weight: bold;
+}
+
+hr{
+	height:4px;
+	border:none;
+	color:#95ab76;
+	background-color:#95ab76
+}

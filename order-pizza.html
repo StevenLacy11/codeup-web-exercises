@@ -12,7 +12,8 @@
 		  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
 		  rel="stylesheet">
 
-	<script src="https://kit.fontawesome.com/5c99e42ceb.js" crossorigin="anonymous"></script>
+	<script crossorigin="anonymous"
+			src="https://kit.fontawesome.com/5c99e42ceb.js"></script>
 
 
 	<!-- Your custom CSS goes here -->
@@ -49,16 +50,16 @@
 				<a class="nav-link btn btn-light"
 				   href="#">Menu</a>
 			<li>
-			<form class="form-inline my-2 my-lg-0">
-				<input aria-label="Search"
-					   class="form-control mr-sm-2"
-					   placeholder="Zip code"
-					   type="search">
-				<button class="btn btn-outline-dark my-2 my-sm-0"
-						type="submit">Search stores near you!
-				</button>
-			</form>
-		</li>
+				<form class="form-inline my-2 my-lg-0">
+					<input aria-label="Search"
+						   class="form-control mr-sm-2"
+						   placeholder="Zip code"
+						   type="search">
+					<button class="btn btn-outline-dark my-2 my-sm-0"
+							type="submit">Search stores near you!
+					</button>
+				</form>
+			</li>
 		</ul>
 		<div class="collapse navbar-collapse"
 			 id="navbarNavDropdown">
@@ -364,7 +365,178 @@
 					</div>
 				</div>
 			</div>
+			<div aria-labelledby="nav-contact-tab"
+				 class="tab-pane fade"
+				 id="toppings"
+				 role="tabpanel">
 
+
+				<div class="card">
+					<div class="card-header text-white bg-primary">
+						Toppings
+					</div>
+					<div class="card-body">
+						<!--          <h5 class="card-title">Please select a Size.</h5>-->
+						<p class="card-text">
+							<!-- Below meat toppings check box -->
+
+						<div class="card mb-5">
+							<div class="card-header">
+								Meat Toppings
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">
+									<div class="form-check">
+										<input class="form-check-input"
+											   id="meat-beef"
+											   name="meat"
+											   type="checkbox"
+											   value="meat-beef">
+										<label class="form-check-label"
+											   for="meat-beef">
+											Beef
+										</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<div class="form-check">
+										<input class="form-check-input"
+											   id="meat-ham"
+											   name="meat"
+											   type="checkbox"
+											   value="meat-ham">
+										<label class="form-check-label"
+											   for="meat-ham">
+											Ham
+										</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<div class="form-check">
+										<input class="form-check-input"
+											   id="meat-bacon"
+											   name="meat"
+											   type="checkbox"
+											   value="meat-bacon">
+										<label class="form-check-label"
+											   for="meat-bacon">
+											Bacon
+										</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<div class="form-check">
+										<input class="form-check-input"
+											   id="meat-chicken"
+											   name="meat"
+											   type="checkbox"
+											   value="meat-chicken">
+										<label class="form-check-label"
+											   for="meat-chicken">
+											Chicken
+										</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<div class="form-check">
+										<input class="form-check-input"
+											   id="meat-philly-steak"
+											   name="meat"
+											   type="checkbox"
+											   value="meat-philly-steak">
+										<label class="form-check-label"
+											   for="meat-philly-steak">
+											Philly Steak
+										</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<div class="form-check">
+										<input class="form-check-input"
+											   id="meat-anchovies"
+											   name="meat"
+											   type="checkbox"
+											   value="meat-anchovies">
+										<label class="form-check-label"
+											   for="meat-anchovies">
+											Anchovies
+										</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="card mb-5">
+							<div class="card-header">
+								Non-meat Toppings
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">
+									<div class="form-check">
+										<input class="form-check-input"
+											   id="non-meat-green-peppers"
+											   name="non-meat"
+											   type="checkbox"
+											   value="non-meat-green-peppers">
+										<label class="form-check-label"
+											   for="non-meat-green-peppers">
+											Green Peppers
+										</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<div class="form-check">
+										<input class="form-check-input"
+											   id="non-meat-mushrooms"
+											   name="non-meat"
+											   type="checkbox"
+											   value="non-meat-mushrooms">
+										<label class="form-check-label"
+											   for="non-meat-mushrooms">
+											Mushrooms
+										</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<div class="form-check">
+										<input class="form-check-input"
+											   id="non-meat-jalepeno-peppers"
+											   name="non-meat"
+											   type="checkbox"
+											   value="non-meat-jalepeno-peppers">
+										<label class="form-check-label"
+											   for="non-meat-jalepeno-peppers">
+											Jalapeno Peppers
+										</label>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<div class="form-check">
+										<input class="form-check-input"
+											   id="non-meat-onions"
+											   name="non-meat"
+											   type="checkbox"
+											   value="non-meat-onions">
+										<label class="form-check-label"
+											   for="non-meat-onions">
+											Onions
+										</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card-footer text-muted d-flex">
+						<button class="btn btn-primary ml-auto"
+								type="submit">
+							Checkout <i class="fas fa-shopping-basket"></i>
+						</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</form>
+</div>
 <!-- Tab Content ends -->
 <!-- Optional JavaScript; choose one of the two! -->
 

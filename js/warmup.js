@@ -18,22 +18,28 @@
 // calculateHumanAge(1, 7)
 
 
-var hasTacos = ["blueberry muffin", "banana", "yogurt", "cereal", "brisket and egg taco"]
+// var hasTacos = ["blueberry muffin", "banana", "yogurt", "cereal", "brisket and egg taco"]
+//
+// var noTacos = ["parfait", "omlette de frumage", "protein shake", "fasting"]
+//
+// tacoTuesdays(hasTacos)
+// tacoTuesdays(noTacos)
+//
+// function tacoTuesdays(arr){
+//
+// 	for (var i = 0; i < arr.length; i++) {
+// 		if(arr[i].includes("taco")){
+// 	return true;
+// 		}
+// 	}
+// 	return false;
+//}
 
-var noTacos = ["parfait", "omlette de frumage", "protein shake", "fasting"]
+function logEvens(a) {
+	for (var i = 1; i <= a; i++) {
 
-tacoTuesdays(hasTacos)
-tacoTuesdays(noTacos)
-
-function tacoTuesdays(arr){
-
-	for (var i = 0; i < arr.length; i++) {
-		if(arr[i].includes("taco")){
-	return true;
+		if (i % 2 === 0) {
+			console.log(i);
 		}
 	}
-	return false;
 }
-
-
-

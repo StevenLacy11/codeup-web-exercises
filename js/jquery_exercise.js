@@ -5,7 +5,7 @@
 $("*").css("font-family", "Indie Flower").css("background-color", "#00ffcc");
 
 $("h1").css("font-family", "'Oswald', sans-serif").css("color", "#FF0033").css("text-align", "center").css("font-size", "3em").click(function () {
-	$(this).css("color", "#FF8099")
+	$(this).css("background-color", "#FF8099").css("color", "#00ffcc")
 });
 
 $("li").css("background-color", "#FF0033").css("font-size", "20px").css("color", "#FF8099").hover(function () {
@@ -16,7 +16,7 @@ $("li").css("background-color", "#FF0033").css("font-size", "20px").css("color",
 	});
 
 $("p").dblclick(function () {
-	$(this).css("font-size", "18px")
+	$(this).css("font-size", "18px").css("color", "#ff0033")
 });
 
 

@@ -4,9 +4,20 @@
 
 $("*").css("font-family", "Indie Flower").css("background-color", "#00ffcc");
 
-$("h1").css("font-family", "'Oswald', sans-serif").css("color", "#FF0033").css("text-align", "center").css("font-size", "3em");
+$("h1").css("font-family", "'Oswald', sans-serif").css("color", "#FF0033").css("text-align", "center").css("font-size", "3em").click(function () {
+	$(this).css("color", "#FF8099")
+});
 
-$("li").css("background-color", "#FF0033").css("font-size", "20px").css("color", "#FF8099");
+$("li").css("background-color", "#FF0033").css("font-size", "20px").css("color", "#FF8099").hover(function () {
+		$(this).css("background-color", "#00ffcc")
+	},
+	function () {
+		$(this).css("background-color", "#ff0033")
+	});
+
+$("p").dblclick(function () {
+	$(this).css("font-size", "18px")
+});
 
 
 //~~~~~~~~~~~~~IDs~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

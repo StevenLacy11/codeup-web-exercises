@@ -28,9 +28,19 @@ $("#second-p").css("background-color", "#FF8099").css("font-size", "32px").css("
 
 //~~~~~~~~~~~~~~~~Classes~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$(".fa-li").css("background-color", "#FF0033").css("font-size", "20px");
+$(".fa-li").css("background-color", "#FF0033").css("font-size", "20px").hover(function () {
+		$(this).css("background-color", "#00ffcc")
+	},
+	function () {
+		$(this).css("background-color", "#ff0033")
+	});
 
-$(".fas").css("background-color", "#FF0033");
+$(".fas").css("background-color", "#FF0033").hover(function () {
+		$(this).css("background-color", "#00ffcc")
+	},
+	function () {
+		$(this).css("background-color", "#ff0033")
+	});
 
 $(".container").css("background-color", "#FF8099").css("margin", "20px").css("padding", "20px").css("border", "7px solid #FF0033");
 

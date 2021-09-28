@@ -13,7 +13,7 @@ $("li").css("background-color", "#FF0033").css("font-size", "20px").css("color",
 
 $("#first-p").css("background-color", "#FF8099").css("font-size", "20px").css("color", "#00ffcc");
 
-$("#second-p").css("background-color", "#FF8099").css("font-size", "20px").css("margin", "20px").css("padding", "20px").css("border", "7px solid #FF0033").css("color", "#00ffcc");
+$("#second-p").css("background-color", "#FF8099").css("font-size", "32px").css("margin", "20px").css("padding", "20px").css("border", "7px solid #FF0033").css("color", "#00ffcc").css("font-family", "Grechen Fuemen", "cursive");
 
 //~~~~~~~~~~~~~~~~Classes~~~~~~~~~~~~~~~~~~~~~~~~~
 

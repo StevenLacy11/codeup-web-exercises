@@ -1,3 +1,4 @@
+"use strict";
 // function calculateDogAge(age, conversion) {
 // 		var dogYears = age*conversion;
 //
@@ -55,3 +56,10 @@
 // 		}
 // 	}
 // }
+
+
+
+
+$("p").click(function () {
+	alert($(this).text())
+});

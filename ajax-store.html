@@ -86,13 +86,13 @@
 		function loadData() {
 			$("#insertProducts").html("");
 			$.ajax("data/inventory.json").done(function (data) {
-				data.forEach(function (dataX, indexX) {
+				data.forEach(function (data2, index2) {
 					inventoryData =
 						"<tr>" +
-						"<th scope=\"row\">" + data[indexX].title.toUpperCase() + "</th>" +
-						"<td>" + data[indexX].quantity + "</td>" +
-						"<td>" + "$" + data[indexX].price + "</td>" +
-						"<td>" + data[indexX].categories.join(", ").toUpperCase() + "</td>" +
+						"<th scope=\"row\">" + data[index2].title.toUpperCase() + "</th>" +
+						"<td>" + data[index2].quantity + "</td>" +
+						"<td>" + "$" + data[index2].price + "</td>" +
+						"<td>" + data[index2].categories.join(", ").toUpperCase() + "</td>" +
 						"</tr>";
 					$("#insertProducts").append(inventoryData);
 				});

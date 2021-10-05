@@ -50,7 +50,7 @@
 			$.each(data, function (index) {
 				html += "<h1>" + data[index].title + "</h1>";
 				html += "<h3>" + data[index].content + "</h3>";
-				html += "<h4>" + data[index].categories + "</h4>";
+				html += "<h4>" + data[index].categories.join(", ") + "</h4>";
 				html += "<p>" + data[index].date + "</td>";
 			});
 			$("#posts").append(html);

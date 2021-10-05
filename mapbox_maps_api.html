@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MAPBOX Exercise</title>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+<div id='map' style='width: 500px; height: 500px;'></div>
+
+
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<!--<script src="js/mapbox_maps_api.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+<script>
+	mapboxgl.accessToken = mapboxKey;
+	var map = new mapboxgl.Map({
+		container: 'map', // container ID
+
+
+	});
+	//map
+
+	map.setStyle("mapbox://styles/mapbox/satellite-streets-v11")
+	map.setZoom(11)
+	map.setCenter([-98.1152,29.6970])
+
+	//markers
+
+	var markerCold = new mapboxgl.Marker({
+		color:"darkBlue",
+	})
+		.setLngLat([78.1987,-74.147])
+		.setDraggable(false)
+		.addTo(map);
+
+	var markerUnion = new mapboxgl.Marker({
+		color:"purple",
+	})
+		.setLngLat([-98.1187,29.7080])
+		.setDraggable(false)
+		.addTo(map);
+
+
+	//Popups
+	var popup = new mapboxgl.Popup()
+		.setLngLat(markerUnion.getLngLat())
+		.setHTML("<h3>Union Street Diner</h3>")
+
+	$(markerUnion).click(function(){
+		popup.addTo(map);
+	})
+	markerUnion.setPopup(popup);
+
+	// info array of info
+	var faveSpots = [
+		{name: "Old River City Cafe", location:"2771 FM 725, New Braunfels, TX."},
+		{name: "krause cafe", location:"148 S. Castell Ave., New Braunfels, TX 78130"},
+		{name: "muck and fuss", location:"295 E San Antonio St, New Braunfels, TX 78130"},
+	]
+
+
+	faveSpots.forEach(function(spot) {
+		geocode(spot.location, mapboxKey).then(function(location) {
+			var popup = new mapboxgl.Popup()
+				.setHTML('<h3><em>' + spot.name + '</em></h3>');
+			var Marker = new mapboxgl.Marker()
+				.setLngLat(location)
+				.addTo(map)
+				.setPopup(popup);
+		});
+	});
+</script>
+</body>
+</html>

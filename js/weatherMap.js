@@ -59,15 +59,19 @@ $.get("http://api.openweathermap.org/data/2.5/forecast", {
 			console.log(data.list[i])
 
 
+			//How Do I Display Img?????????????????????
+			var img = data.list[i].weather[0].icon
+
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Need to capitalize ~~~~~~~~~~~~~~~~~~~~
 
 
 //~~~~~~~~~~~~~~~~~~~~~ Test each path of variables!!!!!!!!!!!!!!!!! ~~~~~~~~~~~~~~~~~~~~
-
+console.log(data.list[i].weather[0].icon)
 // ~~~~~~~~~~~~`~~~~~~~~This puts the data to the HTML five day ~~~~~~~~~
 
 			var html = '<div class="card border text-center">'
-				+ '<h6 class="card-header">' + name + "<br>" + date +   '</h6>' + ("Average " + Math.round(temp) + "°" + "F" + "</br> with " + sky_description + "</br>" + "Feels like " + Math.round(feels_like) + "°" + "F</br>" + "Day " + Math.round(temp_max) + "°" + "F" + " ↑</br>" + "Night " + Math.round(temp_min) + "°" + "F" + " ↓</br>" + "Humidity " + humidity + "%</br>")
+				+ '<h6 class="card-header">' + name + "<br>" + date +   '</h6>' + ("Average " + Math.round(temp) + "°" + "F" + "</br>" + img + "</br> with " + sky_description + "</br>"  + "Feels like " + Math.round(feels_like) + "°" + "F</br>" + "Day " + Math.round(temp_max) + "°" + "F" + " ↑</br>" + "Night " + Math.round(temp_min) + "°" + "F" + " ↓</br>" + "Humidity " + humidity + "%</br>")
 				+ '</div>' + "</br>"
 
 

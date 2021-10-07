@@ -19,6 +19,7 @@ $(document).ready(function () {
 			var current_temp = data.main.temp
 			var current_feels_like = data.main.feels_like
 			var current_humidity = data.main.humidity
+			var current_img = data.weather[0].icon
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Need to capitalize ~~~~~~~~~~~~~~~~~~~~
@@ -31,7 +32,7 @@ $(document).ready(function () {
 // ~~~~~~~~This puts the data to the HTML Current ~~~~~~~~~
 			$(".current-title").html(current_name)
 
-			$(".current-text").html("Currently " + Math.round(current_temp) + "°" + "F" + "</br> with " + current_sky_description + "</br>" + "Feels like " + Math.round(current_feels_like) + "°" + "F</br>" + "Day " + Math.round(current_temp_max) + "°" + "F" + " ↑</br>" + "Night " + Math.round(current_temp_min) + "°" + "F" + " ↓</br>" + "Humidity " + current_humidity + "%</br>")
+			$(".current-text").html("Currently " + Math.round(current_temp) + "°" + "F" + "</br>" + current_img + "</br> with " + current_sky_description + "</br>" + "Feels like " + Math.round(current_feels_like) + "°" + "F</br>" + "Day " + Math.round(current_temp_max) + "°" + "F" + " ↑</br>" + "Night " + Math.round(current_temp_min) + "°" + "F" + " ↓</br>" + "Humidity " + current_humidity + "%</br>")
 
 
 		})

@@ -57,9 +57,13 @@
 // 	}
 // }
 
+function convertDateTime() {
+	var date = new Date();
+	var readable_date = date.toLocaleString("en-US");
+	console.log(readable_date)
+}
 
 
-
-$("p").click(function () {
-	alert($(this).text())
-});
+// $("p").click(function () {
+// 	alert($(this).text())
+// });

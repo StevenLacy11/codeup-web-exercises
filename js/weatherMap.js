@@ -13,20 +13,22 @@ $(document).ready(function () {
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~These are the current variables~~~~~~~~~~~~~~~
+
 			var current_name = data.name
 			var current_temp_max = data.main.temp_max
 			var current_temp_min = data.main.temp_min
 			var current_temp = data.main.temp
 			var current_feels_like = data.main.feels_like
 			var current_humidity = data.main.humidity
-			var current_img = data.weather[0].icon
-
+			var current_img = '<img src="http://openweathermap.org/img/w/' + data.weather[0].icon + '.png"  alt="weather image"/>'
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Need to capitalize ~~~~~~~~~~~~~~~~~~~~
+
 			var current_sky_description = data.weather[0].description
 
 
 //~~~~~~~~~~~~~~~~~~~~~ Test each path of variables!!!!!!!!!!!!!!!!! ~~~~~~~~~~~~~~~~~~~~
+
 			console.log(current_temp_max)
 
 // ~~~~~~~~This puts the data to the HTML Current ~~~~~~~~~
@@ -58,21 +60,20 @@ $.get("http://api.openweathermap.org/data/2.5/forecast", {
 			var sky_description = data.list[i].weather[0].description
 			var date = new Date(data.list[i].dt * 1000).toLocaleDateString("en-US")
 			console.log(data.list[i])
-
-
-			//How Do I Display Img?????????????????????
-			var img = data.list[i].weather[0].icon
+			var img = '<img src="http://openweathermap.org/img/w/' + data.list[i].weather[0].icon + '.png"  alt="weather image"/>'
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Need to capitalize ~~~~~~~~~~~~~~~~~~~~
 
 
 //~~~~~~~~~~~~~~~~~~~~~ Test each path of variables!!!!!!!!!!!!!!!!! ~~~~~~~~~~~~~~~~~~~~
-console.log(data.list[i].weather[0].icon)
-// ~~~~~~~~~~~~`~~~~~~~~This puts the data to the HTML five day ~~~~~~~~~
+
+			console.log(data.list[i].weather[0].icon)
+
+// ~~~~~~~~~~~~~~~~~~~~~This puts the data to the HTML five day ~~~~~~~~~
 
 			var html = '<div class="card border text-center">'
-				+ '<h6 class="card-header">' + name + "<br>" + date +   '</h6>' + ("Average " + Math.round(temp) + "°" + "F" + "</br>" + img + "</br> with " + sky_description + "</br>"  + "Feels like " + Math.round(feels_like) + "°" + "F</br>" + "Day " + Math.round(temp_max) + "°" + "F" + " ↑</br>" + "Night " + Math.round(temp_min) + "°" + "F" + " ↓</br>" + "Humidity " + humidity + "%</br>")
+				+ '<h6 class="card-header">' + name + "<br>" + date + '</h6>' + ("Average " + Math.round(temp) + "°" + "F" + "</br>" + img + "</br> with " + sky_description + "</br>" + "Feels like " + Math.round(feels_like) + "°" + "F</br>" + "Day " + Math.round(temp_max) + "°" + "F" + " ↑</br>" + "Night " + Math.round(temp_min) + "°" + "F" + " ↓</br>" + "Humidity " + humidity + "%</br>")
 				+ '</div>' + "</br>"
 
 

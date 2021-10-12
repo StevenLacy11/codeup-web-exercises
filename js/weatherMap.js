@@ -55,9 +55,9 @@ $(document).ready(function () {
 // ~~~~~~~~~~~~~~~~~~~~~This puts the data to the HTML five day ~~~~~~~~~
 
 					var html = '<div class="card border text-center">'
-						+ '<h6 class="card-header">' + name + "<br>" + date + '</h6>'
+						+ '<h6 class="card-header">' + name + "<br>" + date + "</h6>"
 						+ ("Average " + Math.round(temp) + "°" + "F" + "</br>" + img + "</br> with " + sky_description + "</br>" + "Feels like " + Math.round(feels_like) + "°" + "F</br>" + "Day " + Math.round(temp_max) + "°" + "F" + " ↑</br>" + "Night " + Math.round(temp_min) + "°" + "F" + " ↓</br>" + "Humidity " + humidity + "%</br>")
-						+ '</div>' + "</br>"
+						+ "</div>" + "</br>"
 
 					$('.container').append(html);
 				}

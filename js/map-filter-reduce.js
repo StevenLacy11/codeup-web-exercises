@@ -64,8 +64,10 @@ $(document).ready(function () {
 
 // #6 get the list of user's names in a single string. Example: Your instructors are: ryan, luis, zach, fernando, justin.
 
-	let listofUsers = users.reduce((object, single) => `${object + single.name}, `, "The instructors are: ");
+	// let listofUsers = users.reduce((object, single) => `${object + single.name}, `, "The instructors are: ");
 
-	console.log(listofUsers);
+	let listOfUsers = users.map(user => user.name).join(", ")
+
+	console.log(listOfUsers);
 
 })

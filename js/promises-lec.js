@@ -1,21 +1,26 @@
-
 "use strict";
 
 /*********************************************
  *        USING FETCH WITH PROMISES
  ******************************************** */
 
-var pokemonAPI = fetch('https://pokeapi.co/api/v2/pokemon');
+// var pokemonAPI = fetch('https://pokeapi.co/api/v2/pokemon');
 // return of fetch request is a Promise object
 
 //TODO: console log the results of the above Promise. What is the result?
-
+// console.log(pokemonAPI)
 //TODO: add a method that runs if the Promise resolves successfully
 
 //TODO: add a method that runs if the Promise fails
 
 //TODO: In the callback function of the .then method, parse the response into JSON
-
+// pokemonAPI.then(function(results){
+// 	console.log(results);
+// 	// results.text().then(text => console.log(text))
+// 	results.json().then(resultsObject => console.log(resultsObject))
+// }).catch(function (err) {
+// 	console.log(err);
+// })
 
 /*********************************************
  *              CHAINING PROMISES
@@ -27,6 +32,26 @@ var pokemonAPI = fetch('https://pokeapi.co/api/v2/pokemon');
 
 // TODO: Finally, chain another .then method that would log all of the name properties of the
 //  returned pokemon.
+
+fetch('https://pokeapi.co/api/v2/pokemon')
+	.then(function (results) {
+		console.log(results);
+		// results.text().then(text => console.log(text))
+		results.json()
+			.then(resultsObject => {
+				return resultsObject.results
+			})
+			.then(pokemon => console.log(pokemon[0]))
+	}).catch(function (err) {
+	console.log(err);
+})
+
+fetch('https://pokeapi.co/api/v2/pokemon')
+	.then((response) => response.json())
+	.then((jsonData) => jsonData.results)
+	.then(results =>results.forEach(result =>console.log(result.name)));
+
+
 // BONUS: Is there a way for us to clean up our code?
 
 // Let's try working with the Star Wars API!

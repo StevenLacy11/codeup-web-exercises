@@ -6,9 +6,7 @@ $(document).ready(function () {
 		.then((Data) => {
 			console.log(Data[0].created_at);
 		})
-	const chill = ms => new Promise(function (resolve) {
-		setTimeout(resolve, ms);
-	});
+	const chill = ms => new Promise(resolve => setTimeout(resolve, ms));
 	chill(6000).then(() => console.log(`runs after 6 seconds`));
 
 })
